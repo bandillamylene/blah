@@ -1,0 +1,124 @@
+.hr1 {
+    border: 10px solid  rgb(3, 7, 1) ;
+    border-radius: 5px;
+  }
+
+  .lead{
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 10px black;
+    color: whitesmoke;
+  }
+
+  .quote {
+    position: relative;
+    background-color: #268b7b; 
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px rgb(33, 37, 41);
+    text-align: center;
+    
+}
+@media (max-width:768){
+    .quote {
+        position: relative;
+        background-color: #268b7b; 
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        box-shadow: 4px 4px 10px rgb(33, 37, 41);
+        text-align: center;
+        font-size: smaller;
+        text-align: left;
+        font-size: 18px;
+        
+    }
+}
+
+
+.hr4, .hr5 {
+    border: 5px solid rgb(252, 247, 247);
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.hr2, .hr3 {
+    position: relative; 
+    z-index: 2;
+    border: 5px solid white; 
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.quote ul {
+    list-style-type: none; 
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 10px black;
+    color: whitesmoke;
+    margin-bottom: 50px;
+
+}
+.card2{
+    background-color:  rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px  #212529;
+}
+#servicesimg{
+    
+    width: 500px;
+}
+
+.medscon .card2 .card-header img {
+    width: 100%;
+    height: auto;
+}
+.card2:hover{
+    opacity: 0.6;
+}
+
+.leadcustom{
+    color: whitesmoke;
+    text-shadow: 2px 2px 10px #212529;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 5px;
+ 
+}
+.mycontainer3{
+    background-color: #268b7b;
+}
+.empty2{
+    background-color: #212529;
+}
+.myhr1 {
+    border-top: 2px solid black;
+    
+}
+.myform{
+    background-color: rgb(198, 198, 198);
+    border: 2px solid #268b7b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 4px 4px 10px #212529;
+
+}
+.formbtn{
+    margin-top: 50px;
+}
+
+
+

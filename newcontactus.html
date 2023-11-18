@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand mr-3" href="./index.html">
+                <img src="./images/FSCare-removebg-preview.png" class="logo custom-emphasis">Forones Swine Care
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./2newsrvcs.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./newaboutus.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./newcontactus.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!--CONTACT DETAILS/ FORM-->
+  <div class="container-fluid pt-5">
+    <div class="row">
+        <div class="greet col text-center">
+            <h1 class="display-1"><b>GOOD DAY !</b></h1>
+        </div>
+    </div>
+    <div class="container pt-5">
+            <div class="mycontainer3 row text-center pt-5 mt-5 pb-5" id="Xcontainer3">
+                <div class="history-text1 col d-flex align-items-center p-lg-5">
+                    <div class="empty2 d-lg-block d-md-block d-none col-lg-1 col-md-1 col-0 h-100">.</div>
+                        <div class="leadcustom col">
+                            <hr class="myhr1">
+                                <p id="leadcustom">Thank you for visiting FSCare. If you're looking for more information about our services, location, or about us, please use the links on this page.</p>
+                                <p id="leadcustom">Can't find what you're looking for? Need some assistance? Send us a message!</p>
+                            <hr class="myhr1">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="myform row mt-5">
+                <form class="needs-validation" id="mainForm" novalidate>
+                    <h2 class="h3">What are you contacting us about?</h2>
+                    <div class="form-floating mb-3 mt-3">
+                        <select class="form-select" id="services" name="inquiry" required>
+                            <option value="" selected disabled>Select Services</option>
+                            <option value="Emergency Care">Emergency Care</option>
+                            <option value="Boar for Hire">Boar For Hire</option>
+                            <option value="Free Consultation">Free Consultation</option>
+                            <option value="Free Consultation">Other</option>
+                        </select>
+                        <label for="services">Services</label>
+                        <div class="invalid-feedback"><b>Please select a service.</b></div>
+                    </div>
+
+                    <h2 class="h3">Please be more specific:</h2>
+                    <div class="form-floating mt-3 mb-3">
+                        <textarea class="form-control" id="emergencycare" name="services" placeholder="Please be more specific..." aria-label="Please be more specific" required></textarea>
+                        <label for="emergencycare">Please be more specific</label>
+                        <div class="invalid-feedback">Please provide more details about your inquiry.</div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">First Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter First Name" name="name" required autocomplete="given-name">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last Name:</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required autocomplete="family-name">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <label for="address" class="form-label">Address:</label>
+                        <textarea class="form-control" id="address" name="address" placeholder="Enter Address" aria-label="Address" required autocomplete="street-address"></textarea>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="mt-3 text-center">
+                        <button type="button" class="formbtn btn btn-success mx-auto" onclick="validateForm()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--FOOTER-->
+<footer class="responsive-footer container-fluid mt-5 pt-5">
+    <div class="row mt-5">
+        <div class="col">
+            <p class="foothead">About Us</p>
+            <ul class="footlist" id="aboutuslist">
+                <li><a href="./newaboutus.html">History</a></li>
+                <li><a href="./newcontactus.html">Contact Us</a></li>
+                <li><a href="./newaboutus.html#theteam">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <p class="foothead">Services</p>
+            <ul class="footlist" id="srvcslist">
+                <li><a href="./2newsrvcs.html#education">Free Seminars</a></li>
+                <li><a href="./2newsrvcs.html">Swine Health</a></li>
+                <li><a href="./2newsrvcs.html#boar">Boar for Hire</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <p class="foothead">Contact Information</p>
+            <ul class="footlist">
+                <li>Brgy. New Valencia, Tugbok District</li>
+                <li>Davao City, 8000, Philippines</li>
+                <li>Email: bandillamylene.dev@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <p class="copy text-center">© 2023 Forones Swine Care</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function validateForm() {
+        var mainForm = document.getElementById('mainForm');
+
+        // Check if the main form is valid
+        if (mainForm.checkValidity()) {
+            // If valid, submit the data or take necessary actions
+            submitForm();
+        } else {
+            // If the main form is not valid, show main form validation
+            mainForm.classList.add('was-validated');
+        }
+    }
+
+    function submitForm() {
+        alert('Thank you for reaching out! Wait for our response via Email.');
+    }
+</script>
+
+
+</body>
+</html>
